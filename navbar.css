@@ -1,0 +1,47 @@
+.navbar {
+  background-color: #152d35;
+}
+
+.navbar .navbar-brand {
+  color: #d4ecdd;
+  margin-right: 250px;
+}
+
+.navbar img{
+    height: 25px;
+    width: 25px;
+    margin-right: 5px ;
+    border-radius: 10px;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(212,236,221,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-nav .nav-item {
+  color: #d4ecdd;
+}
+
+.navbar .navbar-nav .nav-item a {
+  color: #d4ecdd;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  background-color: #345b63;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover::after {
+  opacity: 1;
+}
